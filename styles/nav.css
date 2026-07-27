@@ -1,0 +1,121 @@
+@media (min-width: 992px) {
+    body {
+        padding-left: 260px;
+    }
+}
+
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+#sidebarMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    width: 260px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#sidebarMenu .nav-link {
+    color: #495057;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+#sidebarMenu .nav-link i {
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+}
+
+#sidebarMenu .nav-link:not(.active):hover {
+    background-color: #f8f9fa;
+    color: #198754;
+    transform: translateX(4px);
+}
+
+#sidebarMenu .nav-link.active {
+    background-color: #198754;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(25, 135, 84, 0.2);
+}
+
+.hover-bg:hover {
+    background-color: #f8f9fa;
+}
+
+/* Mobile Bottom Navigation Styles */
+@media (max-width: 991.98px) {
+    body {
+        padding-bottom: 100px; 
+    }
+
+    .floating-nav {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1030;
+        background-color: #ffffff;
+        padding: 0.5rem 0.75rem;
+        border-radius: 50px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .floating-nav-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 16px;
+        border-radius: 30px;
+        color: #6c757d;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        height: 48px;
+    }
+
+    .floating-nav-link i {
+        font-size: 1.3rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .floating-nav-label {
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-left: 0;
+        transition: all 0.3s ease;
+    }
+
+    .floating-nav-link.active {
+        background-color: #198754;
+        color: #ffffff;
+        box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3);
+    }
+
+    .floating-nav-link.active .floating-nav-label {
+        max-width: 120px;
+        opacity: 1;
+        margin-left: 8px;
+    }
+    
+    .floating-nav-link:not(.active):hover {
+        background-color: #f8f9fa;
+        color: #198754;
+    }
+}

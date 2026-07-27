@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #198754; 
+    --bg-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+}
+
+textarea {
+  resize: none;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding-bottom: 80px; 
+}
+
+.date-box {
+    background-color: #e8f5e9;
+    color: var(--primary-color);
+    border-radius: 8px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 1.1;
+}
+.date-box span:first-child { font-size: 0.7rem; text-transform: uppercase; }
+.date-box span:last-child { font-size: 0.9rem; font-weight: 700; }
+
+.time-badge {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.markdown-content p { margin-bottom: 0.5rem; }
+.markdown-content ul { padding-left: 1.2rem; margin-bottom: 0.5rem; }
+.markdown-content { font-size: 0.9rem; color: #555; }
+
+.status-upcoming { background-color: #cff4fc; color: #055160; border: 1px solid #b6effb; }
+.status-pending { background-color: #fff3cd; color: #664d03; border: 1px solid #ffecb5; }
+.status-confirmed { background-color: #d1e7dd; color: #0f5132; border: 1px solid #badbcc; }
+.status-urgent { background-color: #f8d7da; color: #842029; border: 1px solid #f5c2c7; }
+.status-current { background-color: #e0f2f1; color: #00695c; border: 1px solid #b2dfdb; }
+.status-done { background-color: #e9ecef; color: #6c757d; border: 1px solid #dee2e6; }
+
+.pagination-btn {
+    color: var(--primary-color);
+    border-color: #dee2e6;
+}
+.pagination-btn:hover {
+    color: #0f5132;
+    background-color: #e8f5e9;
+}
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .main-content {
+        padding-bottom: 2rem;
+    }
+}

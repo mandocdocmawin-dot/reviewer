@@ -1,0 +1,90 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.activity-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+}
+
+.activity-card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important;
+}
+
+.q-box {
+    background-color: #e8f5e9;
+    color: #198754;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65px; 
+    height: 65px;
+}
+
+/* FIX: Ensure min-w-0 actively applies for Flexbox text truncation */
+.min-w-0 {
+    min-width: 0 !important;
+}
+
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* FIX: Uncommented to enable the 2-line clamp */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* FIX: Forces white-space normal so multiline works correctly */
+}
+
+.form-control.bg-light {
+    background-color: #f8f9fa !important;
+    border: 1px solid #e9ecef !important;
+}
+
+.form-control.bg-light:focus {
+    background-color: #fff !important;
+    border-color: #198754 !important;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25) !important;
+}
+
+.pagination-btn {
+    width: 35px;
+    height: 35px;
+    font-weight: 600;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #198754;
+    border-color: #198754;
+    color: white;
+}
+
+.pagination .page-link {
+    color: #198754;
+    transition: all 0.2s;
+}
+
+.pagination .page-link:hover {
+    background-color: #e9ecef;
+    color: #146c43;
+}
+
+.pagination .page-link:focus {
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+.loading {
+    opacity: 0.5;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+#review-list-container {
+    transition: opacity 0.2s ease-in-out;
+}

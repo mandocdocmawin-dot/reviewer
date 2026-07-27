@@ -1,0 +1,19 @@
+.form-switch .form-check-input {
+    width: 2.5em; 
+    height: 1.25em; 
+    cursor: pointer;
+}
+#activity-list {
+    transition: opacity 0.2s ease-in-out;
+}
+.loading {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.pagination-btn {
+    min-width: 35px;
+    font-weight: 500;
+}
+.grayscale {
+    filter: grayscale(100%);
+}

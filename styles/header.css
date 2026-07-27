@@ -1,0 +1,59 @@
+
+header.navbar.dashboard-header {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    width: 100%;
+}
+
+.header-link,
+.notification-wrapper {
+    color: #495057;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header-link:hover,
+.notification-wrapper:hover {
+    color: #198754 !important;
+}
+
+/* Notification Component */
+.notification-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Notification Badge (Red Dot) */
+.notification-wrapper .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -25%);
+    border: 2px solid #f0f2f5; /* Border matches background for cutout effect */
+    box-sizing: content-box;
+}
+
+.header-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Behavior */
+@media (max-width: 991.98px) {
+    header.navbar.dashboard-header {
+        width: 100%;
+        left: 0;
+    }
+}
